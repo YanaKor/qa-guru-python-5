@@ -11,9 +11,11 @@ def test_fill_authorization_form():
     browser.element("label[for='gender-radio-2']").click()
     browser.element("#userNumber").type('89771452365')
     browser.element("#dateOfBirthInput").click()
+
     browser.element(".react-datepicker__year-select").type('1997').click()
     browser.element('.react-datepicker__month-select').type('January').click()
     browser.element('[class="react-datepicker__day react-datepicker__day--006"]').click()
+
     browser.element('#subjectsInput').type('English').press_enter()
     browser.element("label[for='hobbies-checkbox-3']").click()
     browser.element('#uploadPicture').send_keys(os.path.abspath('resources/65NkbF_oOdw.jpg'))
