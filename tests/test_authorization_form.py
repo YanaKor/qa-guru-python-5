@@ -18,7 +18,7 @@ def test_fill_authorization_form():
 
     browser.element('#subjectsInput').type('English').press_enter()
     browser.element("label[for='hobbies-checkbox-3']").click()
-    browser.element('#uploadPicture').send_keys(os.path.abspath('resources/65NkbF_oOdw.jpg'))
+    browser.element('#uploadPicture').send_keys(os.path.abspath('../../qa-guru-python-7-10/tests/resources/65NkbF_oOdw.jpg'))
     browser.element('#currentAddress').type('Smolnaya street')
     browser.element('#state').click()
     browser.element('#react-select-3-input').type('Uttar Pradesh').press_enter()
